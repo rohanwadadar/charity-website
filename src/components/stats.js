@@ -5,10 +5,10 @@ const Stats = () => {
   return (
     <>
       {/* Footer Section */}
-      <footer className="footer-section bg-green-600 text-white py-6 px-14 md:px-20 lg:px-28 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out cursor-pointer mx-auto max-w-7xl">
-        <div className="footer-container flex justify-between items-center mx-auto max-w-6xl relative">
+      <footer className="bg-green-600 text-white py-6 px-4 md:px-8 lg:px-12 xl:px-16 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out cursor-pointer mx-auto max-w-7xl">
+        <div className="flex flex-col md:flex-row md:justify-between items-start md:items-center mx-auto max-w-6xl">
           {/* Logo Section */}
-          <div className="footer-column flex items-center">
+          <div className="flex items-center mb-6 md:mb-0">
             <img
               src="/Frame 116.png" // Update with your logo path
               alt="Logo"
@@ -16,41 +16,44 @@ const Stats = () => {
             />
           </div>
 
-          {/* Company Section */}
-          <div className="footer-column">
-            <h3 className="footer-title font-semibold mb-2">Company</h3>
-            <ul>
-              <li><a href="https://rohanwadadar.github.io/portfolio/" target="_blank" rel="noopener noreferrer">About</a></li>
-              <li><a href="https://rohanwadadar.github.io/portfolio/" target="_blank" rel="noopener noreferrer">Features</a></li>
-              <li><a href="https://rohanwadadar.github.io/portfolio/" target="_blank" rel="noopener noreferrer">Works</a></li>
-              <li><a href="https://rohanwadadar.github.io/portfolio/" target="_blank" rel="noopener noreferrer">Career</a></li>
-            </ul>
-          </div>
+          {/* Footer Links */}
+          <div className="flex flex-col md:flex-row md:space-x-8 text-center md:text-left mb-6 md:mb-0">
+            {/* Company Section */}
+            <div className="mb-6 md:mb-0">
+              <h3 className="font-semibold mb-2">Company</h3>
+              <ul>
+                <li><a href="https://rohanwadadar.github.io/portfolio/" target="_blank" rel="noopener noreferrer">About</a></li>
+                <li><a href="https://rohanwadadar.github.io/portfolio/" target="_blank" rel="noopener noreferrer">Features</a></li>
+                <li><a href="https://rohanwadadar.github.io/portfolio/" target="_blank" rel="noopener noreferrer">Works</a></li>
+                <li><a href="https://rohanwadadar.github.io/portfolio/" target="_blank" rel="noopener noreferrer">Career</a></li>
+              </ul>
+            </div>
 
-          {/* Help Section */}
-          <div className="footer-column">
-            <h3 className="footer-title font-semibold mb-2">Help</h3>
-            <ul>
-              <li><a href="https://rohanwadadar.github.io/portfolio/" target="_blank" rel="noopener noreferrer">Customer Support</a></li>
-              <li><a href="https://rohanwadadar.github.io/portfolio/" target="_blank" rel="noopener noreferrer">Delivery Details</a></li>
-              <li><a href="https://rohanwadadar.github.io/portfolio/" target="_blank" rel="noopener noreferrer">Terms & Conditions</a></li>
-              <li><a href="https://rohanwadadar.github.io/portfolio/" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
-            </ul>
-          </div>
+            {/* Help Section */}
+            <div className="mb-6 md:mb-0">
+              <h3 className="font-semibold mb-2">Help</h3>
+              <ul>
+                <li><a href="https://rohanwadadar.github.io/portfolio/" target="_blank" rel="noopener noreferrer">Customer Support</a></li>
+                <li><a href="https://rohanwadadar.github.io/portfolio/" target="_blank" rel="noopener noreferrer">Delivery Details</a></li>
+                <li><a href="https://rohanwadadar.github.io/portfolio/" target="_blank" rel="noopener noreferrer">Terms & Conditions</a></li>
+                <li><a href="https://rohanwadadar.github.io/portfolio/" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
+              </ul>
+            </div>
 
-          {/* Resources Section */}
-          <div className="footer-column">
-            <h3 className="footer-title font-semibold mb-2">Resources</h3>
-            <ul>
-              <li><a href="https://rohanwadadar.github.io/portfolio/" target="_blank" rel="noopener noreferrer">Free eBooks</a></li>
-              <li><a href="https://rohanwadadar.github.io/portfolio/" target="_blank" rel="noopener noreferrer">Development Tutorial</a></li>
-              <li><a href="https://rohanwadadar.github.io/portfolio/" target="_blank" rel="noopener noreferrer">How to - Blog</a></li>
-              <li><a href="https://rohanwadadar.github.io/portfolio/" target="_blank" rel="noopener noreferrer">Youtube Playlist</a></li>
-            </ul>
+            {/* Resources Section */}
+            <div>
+              <h3 className="font-semibold mb-2">Resources</h3>
+              <ul>
+                <li><a href="https://rohanwadadar.github.io/portfolio/" target="_blank" rel="noopener noreferrer">Free eBooks</a></li>
+                <li><a href="https://rohanwadadar.github.io/portfolio/" target="_blank" rel="noopener noreferrer">Development Tutorial</a></li>
+                <li><a href="https://rohanwadadar.github.io/portfolio/" target="_blank" rel="noopener noreferrer">How to - Blog</a></li>
+                <li><a href="https://rohanwadadar.github.io/portfolio/" target="_blank" rel="noopener noreferrer">Youtube Playlist</a></li>
+              </ul>
+            </div>
           </div>
 
           {/* Social Media Icons */}
-          <div className="footer-social-icons flex space-x-4 ml-4">
+          <div className="flex space-x-4 mt-4 md:mt-0">
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
               <FaFacebook size={24} />
             </a>
