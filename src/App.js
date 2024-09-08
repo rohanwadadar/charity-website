@@ -15,7 +15,7 @@ function App() {
       <Hero />
       <Statistics />
   
-     <Product />
+
       <Routes>
         <Route path="/product" element={<Product />} />
         <Route path="/productList" element={<ProductListing />} />
