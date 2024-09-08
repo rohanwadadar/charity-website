@@ -42,52 +42,56 @@ const Hero = () => {
 
 
 
+      <section className="bg-green text-white py-6 px-4 md:px-8 lg:px-12 xl:px-16 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out cursor-pointer mx-auto max-w-7xl">
+      <div className="flex flex-col md:flex-row md:justify-around items-center text-white space-y-6 md:space-y-0">
+        {/* Projects Completed */}
+        <div className="stat-item text-center flex flex-col items-center">
+          <FaHouseDamage size={40} className="stat-icon mb-2" />
+          <h3 className="text-3xl md:text-4xl font-bold text-yellow-400">563</h3>
+          <p className="mt-2 text-lg">Projects Completed</p>
+        </div>
+
+        {/* Trusted Partners */}
+        <div className="stat-item text-center flex flex-col items-center">
+          <FaHandshake size={40} className="stat-icon mb-2" />
+          <h3 className="text-3xl md:text-4xl font-bold text-yellow-400">425</h3>
+          <p className="mt-2 text-lg">Trusted Partners</p>
+        </div>
+
+        {/* Money Donated */}
+        <div className="stat-item text-center flex flex-col items-center">
+          <FaHandHoldingUsd size={40} className="stat-icon mb-2" />
+          <h3 className="text-3xl md:text-4xl font-bold text-yellow-400">978</h3>
+          <p className="mt-2 text-lg">Money Donated</p>
+        </div>
+
+        {/* Active Volunteers */}
+        <div className="stat-item text-center flex flex-col items-center">
+          <FaHandsHelping size={40} className="stat-icon mb-2" />
+          <h3 className="text-3xl md:text-4xl font-bold text-yellow-400">32</h3>
+          <p className="mt-2 text-lg">Active Volunteers</p>
+        </div>
+      </div>
+    </section>
 
 
 
 
 
-      
- {/* Stats Section */}
- <section className="stats-section bg-green text-white py-6 px-14 md:px-20 lg:px-28 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out cursor-pointer mx-auto max-w-7xl">
 
-<div className="stats-container  flex justify-around items-center text-white space-x-4">
-  {/* Projects Completed */}
-  <div className="stat-item text-center">
-  <FaHouseDamage size={40} className="stat-icon mb-2 ml-14" />
-    <h3 className="stat-number text-4xl font-bold text-yellow-400">563</h3>
-    <p className="stat-description mt-2 text-lg">Projects Completed</p>
-  </div>
 
-  {/* Trusted Partners */}
-  <div className="stat-item text-center">
-    <FaHandshake size={48} className="stat-icon mb-2 ml-12" />
-    <h3 className="stat-number text-4xl font-bold text-yellow-400">425</h3>
-    <p className="stat-description mt-2 text-lg">Trusted Partners</p>
-  </div>
 
-  {/* Money Donated */}
-  <div className="stat-item text-center">
-    <FaHandHoldingUsd size={48} className="stat-icon mb-2 ml-12" />
-    <h3 className="stat-number text-4xl font-bold text-yellow-400">978</h3>
-    <p className="stat-description mt-2 text-lg">Money Donated</p>
-  </div>
 
-  {/* Active Volunteers */}
-  <div className="stat-item text-center ">
-    <FaHandsHelping size={48} className="stat-icon mb-2 ml-12" />
-    <h3 className="stat-number text-4xl font-bold text-yellow-400">32</h3>
-    <p className="stat-description mt-2 text-lg">Active Volunteers</p>
-  </div>
-</div>
 
-</section>
+
+ 
+    
       {/* Second Section: Urgent Causes */}
-      <section className="bg-white py-20 px-10">
-        <h2 className="text-4xl font-bold text-center text-gray-900 mb-10">Urgent Causes</h2>
-        <p className="text-center text-lg text-gray-700 mb-10">
-          Supporting urgent causes, changing lives.
-        </p>
+           <section className="bg-white py-20 px-10">
+            <h2 className="text-4xl font-bold text-center text-gray-900 mb-10">Urgent Causes</h2>
+           <p className="text-center text-lg text-gray-700 mb-10">
+             Supporting urgent causes, changing lives.
+           </p>
 
         {/* Causes Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
