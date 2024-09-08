@@ -14,10 +14,10 @@ function App() {
       <Navbar />
       <Hero />
       <Statistics />
-  
+  <Product />
 
       <Routes>
-        <Route path="/product" element={<Product />} />
+       
         <Route path="/productList" element={<ProductListing />} />
         <Route path="/productDetails/:id" element={<ProductDetails />} /> {/* Example route for product details */}
       </Routes>
