@@ -8,8 +8,8 @@ const Product = () => {
       {/* Link to the ProductList route */}
       <Link to="/productList">
         {/* Big "Product" icon or text */}
-        <h1 style={{ fontSize: "80px", color: "#007bff" }}>🛒 Product</h1>
-        <p>Check out our lastest product</p>
+        <h1 style={{ fontSize: "80px", color: "#007bff" }}>🛒 Charity Product</h1>
+        <p>Porduct for sell (which profit will be donated in charity)</p>
       </Link>
     </div>
   );
