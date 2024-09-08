@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <nav className="flex justify-between items-center py-6 px-10 bg-transparent">
+    <nav className="flex flex-wrap items-center justify-between py-6 px-4 bg-transparent">
       {/* Logo */}
       <div className="text-3xl font-bold text-green-600">
         <a href="/">
@@ -10,8 +12,31 @@ const Navbar = () => {
         </a>
       </div>
 
+      {/* Mobile Menu Button */}
+      <button
+        className="lg:hidden flex items-center text-gray-700 focus:outline-none"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <svg
+          className="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          />
+        </svg>
+      </button>
+
       {/* Navigation Links */}
-      <ul className="flex space-x-8 text-gray-700">
+      <ul
+        className={`lg:flex lg:space-x-8 text-gray-700 ${isOpen ? 'block' : 'hidden'} lg:block`}
+      >
         <li className="hover:text-green-500 cursor-pointer">
           <a href="https://rohanwadadar.github.io/portfolio/">Home</a>
         </li>
@@ -36,19 +61,7 @@ const Navbar = () => {
         </button>
       </a>
     </nav>
-    
   );
 };
 
 export default Navbar;
-
-
-
-
-
-
-
-
-
-
-
