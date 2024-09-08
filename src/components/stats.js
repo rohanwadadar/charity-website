@@ -5,7 +5,7 @@ const Stats = () => {
   return (
     <>
       {/* Footer Section */}
-      <footer className="bg-green-600 text-white py-6 px-4 md:px-8 lg:px-12 xl:px-16 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out cursor-pointer mx-auto max-w-7xl">
+      <footer className="bg-green text-white py-6 px-4 md:px-8 lg:px-12 xl:px-16 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out cursor-pointer mx-auto max-w-7xl">
         <div className="flex flex-col md:flex-row md:justify-between items-start md:items-center mx-auto max-w-6xl">
           {/* Logo Section */}
           <div className="flex items-center mb-6 md:mb-0">
