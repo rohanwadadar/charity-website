@@ -1,0 +1,93 @@
+/* Importing Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Global Styles (if necessary) */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Add any custom styles if Tailwind does not cover them */
+/* General Footer Styles */
+.footer-section {
+  background-color: #37955a; /* Adjust the green color to match the design */
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Default for small screens */
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    grid-template-columns: repeat(5, 1fr); /* For medium screens and up */
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+  }
+}
+
+/* Logo Section */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 80px; /* Set the width for the logo */
+}
+
+/* Footer Column Styles */
+.footer-column {
+  margin-bottom: 20px;
+}
+
+.footer-column h3 {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+  font-size: 0.875rem; /* Smaller text size */
+}
+
+.footer-column ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.social-icons a:hover {
+  color: #ffb400; /* Change color on hover */
+}
+
+/* Copyright Section */
+.footer-copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 20px;
+  padding-top: 20px;
+  font-size: 0.875rem;
+}
