@@ -49,33 +49,36 @@ const ProductListing = () => {
   }, [searchTerm, products]);
 
   return (
-    <div className="container mx-auto py-10 px-4">
-      <h1 className="text-4xl font-extrabold text-green-600 mb-8">Product Listing</h1>
+    <div className="container mx-auto py-10 px-4 min-h-screen bg-gradient-to-r from-green via-blue to-purple text-white font-sans">
+     <h1 style={{ fontSize: "85px", color: "#000000" }}>🛒 Charity Product</h1>
+        <p>Porduct for sell (which profit will be donated in charity)</p>
+   
+      <h1 className="text-4xl font-extrabold mb-8">Product Listing</h1>
       
       <input
         type="text"
         placeholder="Search products..."
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
-        className="border border-green p-2 mb-4 w-full rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+        className="border border-white p-2 mb-4 w-full rounded-md bg-transparent placeholder-white focus:outline-none focus:ring-2 focus:ring-white"
       />
       
       {/* Toggle Button for Categories */}
       <button
         onClick={() => setShowCategories(!showCategories)}
-        className="bg-green text-white p-2 rounded-md mb-4 hover:bg-green transition-colors"
+        className="bg-white text-green p-2 rounded-md mb-4 hover:bg-green hover:text-white transition-colors"
       >
         {showCategories ? 'Hide Categories' : 'Show Categories'}
       </button>
       
       {/* Category List Box */}
       {showCategories && (
-        <div className="bg-white shadow-lg rounded-lg p-6 mb-8 border border-gray">
-          <h2 className="text-2xl font-semibold text-green mb-4">Categories</h2>
-          <ul className="space-y-2">
+        <div className="bg-purple shadow-lg rounded-lg p-6 mb-8 border border-gray">
+          <h2 className="text-2xl font-semibold text-white mb-4">Categories</h2>
+          <ul className="flex flex-wrap space-x-2">
             <li
               key="all"
-              className={`bg-gray-100 hover:bg-gray rounded-md p-3 cursor-pointer ${!selectedCategory ? 'bg-gray-200' : ''}`}
+              className={`bg-gray hover:bg-gray rounded-md p-3 cursor-pointer ${!selectedCategory ? 'bg-gray' : ''}`}
               onClick={() => setSelectedCategory('')}
             >
               All Categories
@@ -83,7 +86,7 @@ const ProductListing = () => {
             {categories.map((category, index) => (
               <li
                 key={index}
-                className={`bg-gray-100 hover:bg-gray rounded-md p-3 cursor-pointer ${selectedCategory === category ? 'bg-green-100' : ''}`}
+                className={`bg-gray hover:bg-gray rounded-md p-3 cursor-pointer ${selectedCategory === category ? 'bg-green' : ''}`}
                 onClick={() => setSelectedCategory(category)}
               >
                 {category}
@@ -96,24 +99,30 @@ const ProductListing = () => {
       {/* Product Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {filteredProducts.map((product) => (
-          <div key={product.id} className="bg-white p-4 shadow-md rounded-md border border-gray-200">
+          <div key={product.id} className="bg-white text-black p-1 shadow-md rounded-md border border-gray">
             <img
               src={product.thumbnail}
               alt={product.title}
               className="h-40 w-full object-cover rounded-t-md"
             />
             <div className="p-4">
-              <h2 className="text-xl font-bold text-gray-800 mb-2">{product.title}</h2>
-              <p className="text-gray-600 mb-2">{product.description}</p>
-              <p className="text-green-600 font-bold mb-4">${product.price}</p>
-              <Link to={`/products/${product.id}`} className="text-green-600 hover:underline">
-                View Details
-              </Link>
+              <h2 className="text-xl font-bold mb-2">{product.title}</h2>
+              <p className="text-gray mb-2">{product.description}</p>
+              <p className="text-red font-bold mb-4">${product.price}</p>
+              <Link to={`/product/${product.id}`} className="text-green hover:underline">
+               View Details
+               </Link>
             </div>
           </div>
         ))}
       </div>
     </div>
+
+ 
+ 
+  
+
+
   );
 };
 
