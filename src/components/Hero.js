@@ -42,10 +42,9 @@ const Hero = () => {
       </section>
 
 
+<section className="bg-green text-white py-20 px-8 md:px-10 lg:px-15 xl:px-18 rounded-3xl shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out cursor-pointer mx-auto max-w-7xl">
+  <div className="flex flex-col md:flex-row md:justify-around items-center text-white space-y-6 md:space-y-0">
 
-
-      <section className="bg-green text-white py-20 px-8 md:px-10 lg:px-15 xl:px-18 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out cursor-pointer mx-auto max-w-7xl">
-      <div className="flex flex-col md:flex-row md:justify-around items-center text-white space-y-6 md:space-y-0">
         {/* Projects Completed */}
         <div className="stat-item text-center flex flex-col items-center">
           <FaHouseDamage size={40} className="stat-icon mb-2" />
