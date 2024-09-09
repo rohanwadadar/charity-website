@@ -121,61 +121,61 @@ const Hero = () => {
         </div>
       </section>
 
-      <section className="bg-white py-20 px-10">
-        <h2 className="text-4xl font-bold text-center text-gray-900 mb-10">
-          Making a difference for those who face hardship
-        </h2>
+      <section className="bg-white py-20 px-4 sm:px-6 lg:px-10">
+      <h2 className="text-4xl font-bold text-center text-gray-900 mb-10">
+        Making a difference for those who face hardship
+      </h2>
 
-        <div className="grid grid-cols-4 md:grid-cols-3 gap-10">
-          {/* Donate Money */}
-          <Link to="/product-list"> {/* Update here */}
-            <div className="bg-white shadow-lg rounded-lg p-10 px-20 text-center border border-green">
-              <div className="flex justify-center mb-4">
-                <img src="4.png" alt="Donate Money" className="h-12" />
-              </div>
-              <h3 className="text-xl font-bold mb-3">Donate Money</h3>
-              <p className="text-gray-600 mb-6">
-                Your small help can change someone else's life and can make someone happy, and you will have a good deed added to your cart.
-              </p>
-              <button className="bg-yellow-200 hover:bg-yellow-300 text-black font-bold py-2 px-4 rounded-full">
-                Donate Now
-              </button>
-            </div>
-          </Link>
-
-          {/* Donate Clothes */}
-          <Link to="/product-list"> {/* Update here */}
-            <div className="bg-white shadow-lg rounded-lg p-10 px-20 text-center border-2 border-green">
-              <div className="flex justify-center mb-4">
-                <img src="6.png" alt="Donate Clothes" className="h-12" />
-              </div>
-              <h3 className="text-xl font-bold mb-3">Donate Clothes</h3>
-              <p className="text-gray-600 mb-6">
-                Your small help can change someone else's life and can make someone happy, and you will have a good deed added to your cart.
-              </p>
-              <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-4 rounded-full">
-                Donate Now
-              </button>
-            </div>
-          </Link>
-
-          {/* Donate Food */}
-          <Link to="/product-list"> {/* Update here */}
-            <div className="bg-white shadow-lg rounded-lg p-10 px-20 text-center border border-green">
-              <div className="flex justify-center mb-4">
-                <img src="5.png" alt="Donate Food" className="h-12" />
-              </div>
-              <h3 className="text-xl font-bold mb-3">Donate Food</h3>
-              <p className="text-gray-600 mb-6">
-                Your small help can change someone else's life and can make someone happy, and you will have a good deed added to your cart.
-              </p>
-              <button className="bg-yellow-200 hover:bg-yellow-300 text-black font-bold py-2 px-4 rounded-full">
-                Donate Now
-              </button>
-            </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+        {/* Donate Money */}
+        <div className="bg-white shadow-lg rounded-lg p-6 sm:p-8 md:p-10 text-center border border-green">
+          <div className="flex justify-center mb-4">
+            <img src="4.png" alt="Donate Money" className="h-12" />
+          </div>
+          <h3 className="text-xl font-bold mb-3">Donate Money</h3>
+          <p className="text-gray-600 mb-6">
+            Your small help can change someone else's life and can make someone happy, and you will have a good deed added to your cart.
+          </p>
+          <Link to="/product-list">
+            <button className="bg-yellow-200 hover:bg-yellow-300 text-black font-bold py-2 px-4 rounded-full">
+              Donate Now
+            </button>
           </Link>
         </div>
-      </section>
+
+        {/* Donate Clothes */}
+        <div className="bg-white shadow-lg rounded-lg p-6 sm:p-8 md:p-10 text-center border-2 border-green">
+          <div className="flex justify-center mb-4">
+            <img src="6.png" alt="Donate Clothes" className="h-12" />
+          </div>
+          <h3 className="text-xl font-bold mb-3">Donate Clothes</h3>
+          <p className="text-gray-600 mb-6">
+            Your small help can change someone else's life and can make someone happy, and you will have a good deed added to your cart.
+          </p>
+          <Link to="/product-list">
+            <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-4 rounded-full">
+              Donate Now
+            </button>
+          </Link>
+        </div>
+
+        {/* Donate Food */}
+        <div className="bg-white shadow-lg rounded-lg p-6 sm:p-8 md:p-10 text-center border border-green">
+          <div className="flex justify-center mb-4">
+            <img src="5.png" alt="Donate Food" className="h-12" />
+          </div>
+          <h3 className="text-xl font-bold mb-3">Donate Food</h3>
+          <p className="text-gray-600 mb-6">
+            Your small help can change someone else's life and can make someone happy, and you will have a good deed added to your cart.
+          </p>
+          <Link to="/product-list">
+            <button className="bg-yellow-200 hover:bg-yellow-300 text-black font-bold py-2 px-4 rounded-full">
+              Donate Now
+            </button>
+          </Link>
+        </div>
+      </div>
+    </section>
     </>
   );
 };
