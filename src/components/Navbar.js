@@ -27,7 +27,7 @@ const Navbar = () => {
       </ul>
 
       {/* Donate Button */}
-      <a href="/https://charity-website-zeta.vercel.app/product-list">
+      <a href="/product-list">
         <button
           className="bg-green-500 text-white py-2 px-4 rounded-full hover:bg-green-600 transition"
           style={{ backgroundColor: '#37955a' }} // Using the preferred green color
