@@ -5,10 +5,9 @@ const Stats = () => {
   return (
     <>
       {/* Footer Section */}
- <footer className="bg-green text-white py-16 px-16 md:px-18 lg:px-26 xl:px-25 rounded-3xl shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out cursor-pointer mx-auto max-w-7xl">
+      <footer className="bg-green text-white py-16 px-16 md:px-18 lg:px-26 xl:px-25 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out cursor-pointer mx-auto max-w-7xl mb-12">
   <div className="flex flex-col md:flex-row md:justify-between items-start md:items-center mx-auto max-w-6xl">
-
-          {/* Logo Section */}
+    {/* Logo Section */}
           <div className="flex items-center mb-6 md:mb-0">
             <img
               src="/Frame 116.png" // Update with your logo path
