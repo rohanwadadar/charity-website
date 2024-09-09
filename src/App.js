@@ -1,25 +1,47 @@
 // src/App.js
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import Statistics from "./components/stats";
-import Product from "./components/Product"; // Import Product component
 import ProductListing from "./components/ProductListing"; // Import ProductListing component
 import ProductDetails from "./components/ProductDetails"; // Import ProductDetails component
+import Stats from "./components/stats";
+
+// Layout component for pages with Navbar and Stats
+const LayoutWithNavbarAndStats = ({ children }) => (
+  <>
+    <Navbar />
+    {children}
+    <Stats />
+  </>
+);
+
+// Component to conditionally render Navbar and Stats
+const ConditionalLayout = () => {
+  const location = useLocation();
+  const showNavbarAndStats = location.pathname === "/";
+
+  return showNavbarAndStats ? (
+    <LayoutWithNavbarAndStats>
+      <Hero />
+    </LayoutWithNavbarAndStats>
+  ) : (
+    <>{/* Render only the children for other routes */}</>
+  );
+};
 
 function App() {
   return (
     <Router>
-      <Navbar />
-      <Hero />
-      <Statistics />
-  <Product />
-
       <Routes>
-       
-        <Route path="/productList" element={<ProductListing />} />
-        <Route path="/productDetails/:id" element={<ProductDetails />} /> {/* Example route for product details */}
+        {/* Route for the home page with Hero component */}
+        <Route path="/" element={<ConditionalLayout />} />
+
+        {/* Route for Product Listing page */}
+        <Route path="/product-list" element={<ProductListing />} />
+
+        {/* Route for Product Details page */}
+        <Route path="/product/:id" element={<ProductDetails />} />
       </Routes>
     </Router>
   );
