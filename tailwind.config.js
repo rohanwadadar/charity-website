@@ -11,8 +11,8 @@ module.exports = {
         secondary: '#ffd700', // Example secondary color
         white: '#ffffff',
         black: '#000000',
-        green: '#28a745',
-        green: '#37955a',
+        green: '#399866',
+        
       },
       fontFamily: {
         sans: ['Helvetica', 'Arial', 'sans-serif'], // Add custom fonts here
