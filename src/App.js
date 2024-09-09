@@ -10,7 +10,7 @@ import Stats from "./components/stats";
 // Layout component for pages with Navbar and Stats
 const LayoutWithNavbarAndStats = ({ children }) => (
   <>
-    <Navbar />
+
     {children}
     <Stats />
   </>
@@ -23,6 +23,7 @@ const ConditionalLayout = () => {
 
   return showNavbarAndStats ? (
     <LayoutWithNavbarAndStats>
+        <Navbar />
       <Hero />
     </LayoutWithNavbarAndStats>
   ) : (
