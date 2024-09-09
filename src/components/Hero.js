@@ -21,28 +21,30 @@ const Hero = () => {
             </p>
           </div>
 
-          {/* Image Section */}
-          <div className="relative">
-            {/* Background Decorative Yellow Circle */}
-            <div className="absolute bg-yellow-400 w-16 h-16 rounded-full -top-8 -left-8"></div>
+    {/* Image Section */}
+    <div className="relative">
+  {/* Background Decorative Yellow Circle */}
+  <div className="absolute bg-yellow-400 w-16 h-16 rounded-full -top-8 -left-8"></div>
 
-            {/* Main Image */}
-            <img
-              src="/children.png"
-              alt="Children"
-              className="rounded-lg shadow-lg"
-            />
+  {/* Green Rectangle (set lower z-index) */}
+  <div className="absolute bg-green w-20 h-20 rounded-lg -bottom-8 -left-10 z-0"></div>
 
-            {/* Background Decorative Green Square */}
-            <div className="absolute bg-green-500 w-16 h-16 rounded-lg -bottom-8 -right-8"></div>
-          </div>
+  {/* Main Image (set higher z-index) */}
+  <img
+    src="/children.png"
+    alt="Children"
+    className="rounded-lg z-10 relative"
+  />
+</div>
+
+
         </div>
       </section>
 
 
 
 
-      <section className="bg-green text-white py-6 px-4 md:px-8 lg:px-12 xl:px-16 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out cursor-pointer mx-auto max-w-7xl">
+      <section className="bg-green text-white py-20 px-8 md:px-10 lg:px-15 xl:px-18 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out cursor-pointer mx-auto max-w-7xl">
       <div className="flex flex-col md:flex-row md:justify-around items-center text-white space-y-6 md:space-y-0">
         {/* Projects Completed */}
         <div className="stat-item text-center flex flex-col items-center">
@@ -143,10 +145,10 @@ const Hero = () => {
         Making a difference for those who face hardship
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div className="grid grid-cols-4 md:grid-cols-3 gap-10">
   {/* Donate Money */}
   <a href="https://rohanwadadar.github.io/portfolio/" target="_blank" rel="noopener noreferrer">
-    <div className="bg-white shadow-lg rounded-lg p-6 text-center border border-yellow-200">
+    <div className="bg-white shadow-lg rounded-lg p-10 px-20 text-center border border-green">
       <div className="flex justify-center mb-4">
         <img src="4.png" alt="Donate Money" className="h-12" />
       </div>
@@ -162,7 +164,7 @@ const Hero = () => {
 
   {/* Donate Clothes */}
   <a href="https://rohanwadadar.github.io/portfolio/" target="_blank" rel="noopener noreferrer">
-    <div className="bg-white shadow-lg rounded-lg p-6 text-center border-2 border-green-500">
+    <div className="bg-white shadow-lg rounded-lg p-10 px-20 text-center border-2 border-green">
       <div className="flex justify-center mb-4">
         <img src="6.png" alt="Donate Clothes" className="h-12" />
       </div>
@@ -178,7 +180,7 @@ const Hero = () => {
 
   {/* Donate Food */}
   <a href="https://rohanwadadar.github.io/portfolio/" target="_blank" rel="noopener noreferrer">
-    <div className="bg-white shadow-lg rounded-lg p-6 text-center border border-yellow-200">
+    <div className="bg-white shadow-lg rounded-lg p-10 px-20 text-center border border-green">
       <div className="flex justify-center mb-4">
         <img src="5.png" alt="Donate Food" className="h-12" />
       </div>
