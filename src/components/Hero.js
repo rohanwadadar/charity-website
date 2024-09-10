@@ -116,7 +116,7 @@ const Hero = () => {
           margin: '0 auto',
         }}
       >
-    <h1
+    <h2
   style={{
     fontFamily: 'Manuale',
     fontSize: '50px',
@@ -130,16 +130,16 @@ const Hero = () => {
   }}
 >
   Urgent Causes
-</h1>
+</h2>
 <p1
   style={{
     fontFamily: 'Montserrat',
     fontSize: '1rem',
     fontWeight: 500,
-    lineHeight: '1.5',
+    lineHeight: '1.9',
     textAlign: 'center',
     color: '#4A4A4A',
-    marginBottom: '40px',
+    marginBottom: '60px',
     position: 'relative', // Allows positioning adjustments
     left: '550px' // Adjust this value to move it toward the left
   }}
@@ -152,6 +152,7 @@ const Hero = () => {
           className="grid grid-cols-1 md:grid-cols-3 gap-10"
           style={{
             width: '100%',
+            
             maxWidth: '1200px',
             margin: '0 auto',
           }}
@@ -428,12 +429,9 @@ const Hero = () => {
           section {
             padding: 20px !important;
           }
-         h1 {
-            font-size: 2.0rem !important; /* Adjust size for mobile if needed */
-            line-height: 5.9 !important;
-            position: relative !important;
-            top: 45px !important; /* Slightly downward */
-            left: -106px !important; /* Slightly to the left */
+          h1 {
+            font-size: 2.5rem !important;
+            line-height: 1.2 !important;
           }
 
           p {
@@ -446,6 +444,7 @@ const Hero = () => {
             left: '50px'
             
           }
+          div
           .grid {
             grid-template-columns: 1fr !important;
           }
@@ -458,11 +457,27 @@ const Hero = () => {
             padding: 25px !important;
           }
           h2 {
-            font-size: 1.0rem !important; /* Adjust size for mobile if needed */
-            line-height: 1.7 !important;
+            font-size: 1.3rem !important; /* Adjust size for mobile if needed */
+            line-height: 5.7 !important;
             position: relative !important;
             top: 45px !important; /* Slightly downward */
-            left: -126px !important; /* Slightly to the left */
+            left: -106px !important; /* Slightly to the left */
+          }
+          .absolute.bg-yellow-400 {
+            width: 80px !important; /* Adjust width for mobile */
+            height: 80px !important; /* Adjust height for mobile */
+            top: -30px !important; /* Adjust position for mobile */
+            left: -20px !important; /* Adjust position for mobile */
+          }
+          .div {
+            width: 100px !important; /* Adjust width for mobile */
+            height: 100px !important; /* Adjust height for mobile */
+            top: 220px !important; /* Adjust position for mobile */
+            left: 320px !important; /* Adjust position for mobile */
+          }
+          img {
+            width: 100% !important; /* Ensure image is responsive */
+            border-radius: 10px !important; /* Adjust border radius for mobile */
           }
         }
       `}</style>
