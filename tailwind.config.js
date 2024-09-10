@@ -16,6 +16,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Helvetica', 'Arial', 'sans-serif'], // Add custom fonts here
+        manuale: ['Manuale', 'serif']
       },
       spacing: {
         '128': '32rem', // Custom spacing values
@@ -28,4 +29,3 @@ module.exports = {
   },
   plugins: [],
 }
-// tailwind.config.js
