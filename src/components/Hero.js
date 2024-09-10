@@ -116,7 +116,7 @@ const Hero = () => {
           margin: '0 auto',
         }}
       >
-    <h2
+    <h1
   style={{
     fontFamily: 'Manuale',
     fontSize: '50px',
@@ -130,7 +130,7 @@ const Hero = () => {
   }}
 >
   Urgent Causes
-</h2>
+</h1>
 <p1
   style={{
     fontFamily: 'Montserrat',
@@ -459,7 +459,7 @@ const Hero = () => {
             line-height: 1.7 !important;
             position: relative !important;
             top: 45px !important; /* Slightly downward */
-            left: -106px !important; /* Slightly to the left */
+            left: -126px !important; /* Slightly to the left */
           }
         }
       `}</style>
