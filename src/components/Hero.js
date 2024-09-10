@@ -428,9 +428,12 @@ const Hero = () => {
           section {
             padding: 20px !important;
           }
-          h1 {
-            font-size: 2.5rem !important;
-            line-height: 1.2 !important;
+         h1 {
+            font-size: 2.0rem !important; /* Adjust size for mobile if needed */
+            line-height: 5.9 !important;
+            position: relative !important;
+            top: 45px !important; /* Slightly downward */
+            left: -106px !important; /* Slightly to the left */
           }
 
           p {
