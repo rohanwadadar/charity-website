@@ -269,8 +269,8 @@ className="absolute bg-green z-0"
       <section
   className="bg-white py-20 px-4 sm:px-6 lg:px-10 relative"
   style={{
-    width: '1499px',
-    height: '780px',
+    width: '1521px',
+    height: 'auto',
  
     padding: '100px 100px 100px 100px',
     gap: '50px',
