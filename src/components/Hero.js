@@ -455,11 +455,11 @@ const Hero = () => {
             padding: 25px !important;
           }
           h2 {
-            font-size: 2.0rem !important; /* Adjust size for mobile if needed */
+            font-size: 1.0rem !important; /* Adjust size for mobile if needed */
             line-height: 1.7 !important;
             position: relative !important;
             top: 45px !important; /* Slightly downward */
-            left: -26px !important; /* Slightly to the left */
+            left: -106px !important; /* Slightly to the left */
           }
         }
       `}</style>
