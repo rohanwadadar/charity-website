@@ -272,54 +272,7 @@ const Hero = () => {
   </div>
 </section>
 
-      <style jsx>{`
-        @media (max-width: 768px) {
-          section {
-            padding: 20px !important;
-          }
-        
-
-          p {
-            font-size: 1rem !important;
-            line-height: 1.5 !important;
-          }
-          p1 {
-            font-size: 1rem !important;
-            line-height: 7 !important;
-            left: '50px'
-            
-          }
-          div
-          .grid {
-            grid-template-columns: 1fr !important;
-          }
-          .stat-item {
-            margin-bottom: 20px;
-          }
-          button {
-            width: 100% !important;
-            height: auto !important;
-            padding: 25px !important;
-          }
-         
-          .absolute.bg-yellow-400 {
-            width: 80px !important; /* Adjust width for mobile */
-            height: 80px !important; /* Adjust height for mobile */
-            top: -30px !important; /* Adjust position for mobile */
-            left: -20px !important; /* Adjust position for mobile */
-          }
-          .div {
-            width: 100px !important; /* Adjust width for mobile */
-            height: 100px !important; /* Adjust height for mobile */
-            top: 220px !important; /* Adjust position for mobile */
-            left: 320px !important; /* Adjust position for mobile */
-          }
-          img {
-            width: 100% !important; /* Ensure image is responsive */
-            border-radius: 10px !important; /* Adjust border radius for mobile */
-          }
-        }
-      `}</style>
+   
     </>
   );
 };
