@@ -168,107 +168,106 @@ const Hero = () => {
   
 
 
-       <section
-      className="bg-white py-20 px-4 sm:px-6 lg:px-10 relative"
-      style={{
-        width: '100%',
-        maxWidth: '1521px',
-        margin: '0 auto',
-        padding: '100px',
-        gap: '50px',
-        opacity: 1
-      }}
-    >
-      <h2
-        className="text-center mb-10 mx-auto"
+   <section
+  className="bg-white py-20 px-4 sm:px-6 lg:px-10 relative"
+  style={{
+    width: '100%',
+    maxWidth: '1521px',
+    margin: '0 auto',
+    padding: '100px',
+    gap: '50px',
+    opacity: 1
+  }}
+>
+  <h2
+    className="text-center mb-10 mx-auto"
+    style={{
+      fontFamily: 'Manuale',
+      fontSize: '50px',
+      fontWeight: 600,
+      lineHeight: '50px',
+      width: '100%',
+      maxWidth: '653px',
+      height: 'auto',
+      minHeight: '110px',
+      opacity: 1,
+    }}
+  >
+    Making a difference for those who face hardship
+  </h2>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+    {[
+      { title: "Donate Money", image: "4.png", borderColor: "border-green-500" },
+      { title: "Donate Clothes", image: "6.png", borderColor: "border-green" },
+      { title: "Donate Food", image: "5.png", borderColor: "border-green-500" }
+    ].map((item, index) => (
+      <div
+        key={index}
+        className={`bg-white shadow-lg rounded-lg text-center border-4 ${item.borderColor}`}
         style={{
-          fontFamily: 'Manuale',
-          fontSize: '50px',
-          fontWeight: 600,
-          lineHeight: '50px',
-          width: '100%',
-          maxWidth: '653px',
-          height: 'auto',
-          minHeight: '110px',
-          opacity: 1,
+          width: '370px',
+          height: '420px',
+          padding: '38px 23px 38px 24px',
+          borderRadius: '20px',
+          opacity: 1
         }}
       >
-        Making a difference for those who face hardship
-      </h2>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
-        {[
-          { title: "Donate Money", image: "4.png", borderColor: "border-green-500" },
-          { title: "Donate Clothes", image: "6.png", borderColor: "border-green" },
-          { title: "Donate Food", image: "5.png", borderColor: "border-green-500" }
-        ].map((item, index) => (
-          <div
-            key={index}
-            className={`bg-white shadow-lg rounded-lg text-center border-4 ${item.borderColor}`}
+        <div className="flex justify-center mb-4">
+          <img src={item.image} alt={item.title} className="h-12" />
+        </div>
+        <h3 
+          className="text-xl font-bold mb-3 mx-auto"
+          style={{
+            fontFamily: 'Manuale',
+            fontSize: '18px',
+            fontWeight: 600,
+            lineHeight: '25.87px',
+            textAlign: 'center',
+            width: '120px',
+            height: '26px',
+            marginTop: '40px',
+            opacity: 1,
+            marginLeft: 'auto',
+            marginRight: 'auto'
+          }}
+        >
+          {item.title}
+        </h3>
+        <p
+          className="text-gray-600 mb-6 mx-auto"
+          style={{
+            fontFamily: 'Montserrat',
+            fontSize: '15px',
+            fontWeight: 400,
+            marginTop: '20px',
+            lineHeight: '21px',
+            textAlign: 'center',
+            width: '323px',
+            height: '84px',
+            opacity: 1
+          }}
+        >
+          Your small help can change someone else's life and can make someone happy, and you will have a good deed added to your cart.
+        </p>
+        <Link to="/product-list">
+          <button 
+            className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold rounded-full"
             style={{
-              width: '370px',
-              height: '420px',
-              padding: '38px 23px 38px 24px',
-              borderRadius: '20px',
+              width: '162px',
+              height: '60px',
+              padding: '20px 30px',
+              borderRadius: '30px 30px 30px 30px',
+              border: '1.5px solid',
               opacity: 1
             }}
           >
-            <div className="flex justify-center mb-4">
-              <img src={item.image} alt={item.title} className="h-12" />
-            </div>
-            <h3 
-              className="text-xl font-bold mb-3 mx-auto"
-              style={{
-                fontFamily: 'Manuale',
-                fontSize: '18px',
-                fontWeight: 600,
-                lineHeight: '25.87px',
-                textAlign: 'center',
-                width: '120px',
-                height: '26px',
-                marginTop: '40px',
-                opacity: 1,
-                marginLeft: 'auto',
-                marginRight: 'auto'
-              }}
-            >
-              {item.title}
-            </h3>
-            <p
-              className="text-gray-600 mb-6 mx-auto"
-              style={{
-                fontFamily: 'Montserrat',
-                fontSize: '15px',
-                fontWeight: 400,
-                marginTop: '20px',
-                lineHeight: '21px',
-                textAlign: 'center',
-                width: '323px',
-                height: '84px',
-                opacity: 1
-              }}
-            >
-              Your small help can change someone else's life and can make someone happy, and you will have a good deed added to your cart.
-            </p>
-            <Link to="/product-list">
-              <button 
-                className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold rounded-full"
-                style={{
-                  width: '162px',
-                  height: '60px',
-                  padding: '20px 30px',
-                  borderRadius: '30px 30px 30px 30px',
-                  border: '1.5px solid',
-                  opacity: 1
-                }}
-              >
-                Donate Now
-              </button>
-            </Link>
-          </div>
-        ))}
+            Donate Now
+          </button>
+        </Link>
       </div>
-    </section>
+    ))}
+  </div>
+</section>
 
       <style jsx>{`
         @media (max-width: 768px) {
