@@ -84,98 +84,88 @@ const Hero = () => {
       </section>
 
 
-      <section 
-        className="bg-[#F8F6E4] py-10 md:py-20 px-4 md:px-10"
+ 
+    <section 
+      className="bg-[#F8F6E4] py-10 md:py-20 px-4 md:px-10"
+      style={{
+        width: '100%',
+        maxWidth: '1440px',
+        margin: '0 auto',
+      }}
+    >
+      <div className="text-center mb-8 md:mb-12">
+        <h2
+          className="font-semibold text-3xl md:text-5xl mb-2 mx-auto"
+          style={{
+            fontFamily: 'Manuale',
+            lineHeight: '1.2',
+            maxWidth: '313px',
+          }}
+        >
+          Urgent Causes
+        </h2>
+        <p
+          className="text-base md:text-lg font-medium text-[#4A4A4A] mt-2 mx-auto"
+          style={{
+            fontFamily: 'Montserrat',
+            lineHeight: '1.9',
+            maxWidth: '400px',
+          }}
+        >
+          Supporting urgent causes, changing lives.
+        </p>
+      </div>
+
+      <div 
+        className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10"
         style={{
           width: '100%',
-          maxWidth: '1440px',
+          maxWidth: '1200px',
           margin: '0 auto',
         }}
-      >
-    <h2
-  style={{
-    fontFamily: 'Manuale',
-    fontSize: '50px',
-    fontWeight: 600,
-    lineHeight: '50px',
-    textAlign: 'left',
-    width: '313px',
-    height: '50px',
-    marginLeft: '39%', // Removed the previous 10px marginBottom
-    opacity: 1
-  }}
->
-  Urgent Causes
-</h2>
-<p1
-  style={{
-    fontFamily: 'Montserrat',
-    fontSize: '1rem',
-    fontWeight: 500,
-    lineHeight: '1.9',
-    textAlign: 'center',
-    color: '#4A4A4A',
-    marginBottom: '60px',
-    position: 'relative', // Allows positioning adjustments
-    left: '550px' // Adjust this value to move it toward the left
-  }}
->
-  Supporting urgent causes, changing lives.
-</p1>
-
-
-        <div 
-          className="grid grid-cols-1 md:grid-cols-3 gap-10"
-          style={{
-            width: '100%',
-            
-            maxWidth: '1200px',
-            margin: '0 auto',
-          }}
-        >          
-          {[
-            { img: "/1.png", title: "Morocco Strikes With Earthquake", desc: "Current situation for Morocco has gone horrible due to the strike of Earthquake.", donated: 4400, progress: 30 },
-            { img: "/2.png", title: "Harmful Disease In Air", desc: "World has been infected with deadly life-taking virus.", donated: 7888, progress: 60 },
-            { img: "/3.png", title: "Patna Suffer With Heavy Flood", desc: "People in Patna have suffered a very heavy flood in the past few days.", donated: 11000, progress: 90 }
-          ].map((cause, index) => (
-            <div 
-              key={index}
-              className="bg-white shadow-lg rounded-lg p-5"
+      >          
+        {[
+          { img: "/1.png", title: "Morocco Strikes With Earthquake", desc: "Current situation for Morocco has gone horrible due to the strike of Earthquake.", donated: 4400, progress: 30 },
+          { img: "/2.png", title: "Harmful Disease In Air", desc: "World has been infected with deadly life-taking virus.", donated: 7888, progress: 60 },
+          { img: "/3.png", title: "Patna Suffer With Heavy Flood", desc: "People in Patna have suffered a very heavy flood in the past few days.", donated: 11000, progress: 90 }
+        ].map((cause, index) => (
+          <div 
+            key={index}
+            className="bg-white shadow-lg rounded-lg p-5"
+            style={{
+              width: '100%',
+              maxWidth: '370px',
+              margin: '0 auto',
+            }}
+          >
+            <img src={cause.img} alt={cause.title} className="rounded-lg mb-4 w-full" />
+            <h3 
+              className="text-xl font-bold mb-3"
               style={{
-                width: '100%',
-                maxWidth: '370px',
-                margin: '0 auto',
+                fontFamily: 'Manuale',
+                fontSize: '22px',
+                fontWeight: 600,
+                lineHeight: '1.2',
+                textAlign: 'left'
               }}
             >
-              <img src={cause.img} alt={cause.title} className="rounded-lg mb-4 w-full" />
-              <h3 
-                className="text-xl font-bold mb-3"
-                style={{
-                  fontFamily: 'Manuale',
-                  fontSize: '22px',
-                  fontWeight: 600,
-                  lineHeight: '1.2',
-                  textAlign: 'left'
-                }}
-              >
-                {cause.title}
-              </h3>
-              <p className="text-gray-700 mb-4">
-                {cause.desc}
-              </p>
-              <p className="text-xl font-bold text-gray-900">${cause.donated} <span className="text-sm text-gray-500">Donated till now</span></p>
-              <div className="w-full bg-gray-200 rounded-full h-4 mt-2">
-  <div
-    className={`h-4 rounded-full ${cause.progress >= 0 && cause.progress < 33 ? 'bg-red-500' : cause.progress >= 33 && cause.progress < 66 ? 'bg-orange-500' : 'bg-green'}`}
-    style={{ width: `${cause.progress}%` }}
-  ></div>
-</div>
-
+              {cause.title}
+            </h3>
+            <p className="text-gray-700 mb-4">
+              {cause.desc}
+            </p>
+            <p className="text-xl font-bold text-gray-900">${cause.donated} <span className="text-sm text-gray-500">Donated till now</span></p>
+            <div className="w-full bg-gray-200 rounded-full h-4 mt-2">
+              <div
+                className={`h-4 rounded-full ${cause.progress >= 0 && cause.progress < 33 ? 'bg-red-500' : cause.progress >= 33 && cause.progress < 66 ? 'bg-orange-500' : 'bg-green'}`}
+                style={{ width: `${cause.progress}%` }}
+              ></div>
             </div>
-          ))}
-        </div>
-      </section>
-
+          </div>
+        ))}
+      </div>
+    </section>
+  
 
 
       <section
