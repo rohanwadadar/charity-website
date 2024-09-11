@@ -6,51 +6,32 @@ const Hero = () => {
   return (
     <>
       <section className="bg-[#FAF6EB] py-10 md:py-20 px-4 md:px-10">
-        <div 
-          className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center max-w-[1440px] mx-auto md:ml-20" 
+        <div
+          className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center max-w-[1440px] mx-auto md:ml-20"
           style={{ height: 'auto', minHeight: '450px' }}
         >
           <div className="max-w-[500px] mx-auto md:mx-0">
-          <h1
-  className="text-gray-900"
-  style={{
-    fontFamily: 'Manuale',
-    fontSize: '70px',
-    fontWeight: 600,
-    lineHeight: '81px',
-    textAlign: 'left',
-    width: '500px',
-    height: '172px',
-    marginBottom: '0px',
-    opacity: 1
-  }}
->
-  Empower Hope, <br /> Transform Lives
-</h1>
-
-<p
-  className="text-gray-700"
-  style={{
-    fontFamily: 'Montserrat',
-    fontSize: '20px',
-    fontWeight: 500,
-    lineHeight: '30px',
-    textAlign: 'left',
-    width: '499px',
-    height: '90px',
-    marginBottom: '0px',
-    opacity: 1
-  }}
->
-  The essence of charity by conveying the idea of uplifting individuals and
-  communities through the power of hope and positive change.
-</p>
-          
+            <h1
+              className="text-gray-900 text-4xl md:text-[70px] font-semibold leading-tight md:leading-[81px] text-left w-full md:w-[500px] mb-4 md:mb-0"
+              style={{
+                fontFamily: 'Manuale',
+              }}
+            >
+              Empower Hope, <br /> Transform Lives
+            </h1>
+            <p
+              className="text-gray-700 text-base md:text-xl font-medium leading-relaxed md:leading-[30px] text-left w-full md:w-[499px]"
+              style={{
+                fontFamily: 'Montserrat',
+              }}
+            >
+              The essence of charity by conveying the idea of uplifting individuals and
+              communities through the power of hope and positive change.
+            </p>
           </div>
-
           <div className="relative mt-10 md:mt-0">
-            <div 
-              className="absolute bg-yellow-400 z-10 hidden md:block" 
+            <div
+              className="absolute bg-yellow-400 z-10 hidden md:block"
               style={{
                 width: '120px',
                 height: '120px',
@@ -59,30 +40,51 @@ const Hero = () => {
                 borderRadius: '50%',
               }}
             ></div>
-
-            <div 
-              className="absolute bg-green z-0 hidden md:block" 
+            <div
+              className="absolute bg-green z-0 hidden md:block"
               style={{
-                width: '138px', 
-                height: '138px', 
-                top: '290px', 
-                left: '411px', 
-                borderRadius: '23px', 
+                width: '138px',
+                height: '138px',
+                top: '290px',
+                left: '411px',
+                borderRadius: '23px',
               }}
             ></div>
-
             <img
               src="/children.png"
               alt="Children"
-              className="z-5 relative w-full md:w-auto"
-              style={{
-                borderRadius: '20px 0px 0px 0px',
-              }}
+              className="z-5 relative w-full md:w-auto rounded-t-lg md:rounded-tl-lg md:rounded-tr-none"
             />
           </div>
         </div>
       </section>
 
+      <section
+        className="bg-green text-white py-10 md:py-20 px-4 md:px-10 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out cursor-pointer mx-auto relative transform translate-y-1/4 md:translate-y-0 mb-20 md:mb-0"
+        style={{
+          width: '90%',
+          maxWidth: '1178px',
+          borderRadius: '40px',
+        }}
+      >
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-0 items-center text-white">
+          {[
+            { icon: FaHouseDamage, value: 563, label: "Projects Completed" },
+            { icon: FaHandshake, value: 425, label: "Trusted Partners" },
+            { icon: FaHandHoldingUsd, value: 978, label: "Money Donated" },
+            { icon: FaHandsHelping, value: 32, label: "Active Volunteers" }
+          ].map((item, index) => (
+            <div key={index} className="stat-item text-center flex flex-col items-center">
+              <item.icon size={30} className="stat-icon mb-2" />
+              <h3 className="text-2xl md:text-4xl font-bold text-yellow-400">{item.value}</h3>
+              <p className="mt-2 text-sm md:text-lg">{item.label}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+
+          
       <section
         className="bg-green text-white py-10 md:py-20 px-4 md:px-10 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out cursor-pointer mx-auto relative transform translate-y-1/4 md:translate-y-0 mb-20 md:mb-0"
         style={{
