@@ -180,17 +180,20 @@ const Hero = () => {
   }}
 >
   <h2
-    className="text-center mb-10 mx-auto"
+    className="text-center mb-10 mx-auto donation-heading"
     style={{
-      fontFamily: 'Manuale',
+      fontFamily: 'Manuale, serif',
       fontSize: '50px',
       fontWeight: 600,
-      lineHeight: '50px',
+      lineHeight: '1.2',
       width: '100%',
       maxWidth: '653px',
       height: 'auto',
       minHeight: '110px',
       opacity: 1,
+      wordWrap: 'break-word',
+      overflow: 'hidden',
+      textOverflow: 'ellipsis',
     }}
   >
     Making a difference for those who face hardship
@@ -274,10 +277,7 @@ const Hero = () => {
           section {
             padding: 20px !important;
           }
-          h1 {
-            font-size: 2.5rem !important;
-            line-height: 1.2 !important;
-          }
+        
 
           p {
             font-size: 1rem !important;
@@ -301,13 +301,7 @@ const Hero = () => {
             height: auto !important;
             padding: 25px !important;
           }
-          h2 {
-            font-size: 1.3rem !important; /* Adjust size for mobile if needed */
-            line-height: 5.7 !important;
-            position: relative !important;
-            top: 45px !important; /* Slightly downward */
-            left: -106px !important; /* Slightly to the left */
-          }
+         
           .absolute.bg-yellow-400 {
             width: 80px !important; /* Adjust width for mobile */
             height: 80px !important; /* Adjust height for mobile */
