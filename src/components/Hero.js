@@ -84,32 +84,6 @@ const Hero = () => {
       </section>
 
 
-          
-      <section
-        className="bg-green text-white py-10 md:py-20 px-4 md:px-10 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out cursor-pointer mx-auto relative transform translate-y-1/4 md:translate-y-0 mb-20 md:mb-0"
-        style={{
-          width: '90%',
-          maxWidth: '1178px',
-          borderRadius: '40px 40px 40px 40px',
-
-        }}
-      >
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-0 items-center text-white">
-          {[
-            { icon: FaHouseDamage, value: 563, label: "Projects Completed" },
-            { icon: FaHandshake, value: 425, label: "Trusted Partners" },
-            { icon: FaHandHoldingUsd, value: 978, label: "Money Donated" },
-            { icon: FaHandsHelping, value: 32, label: "Active Volunteers" }
-          ].map((item, index) => (
-            <div key={index} className="stat-item text-center flex flex-col items-center">
-              <item.icon size={30} className="stat-icon mb-2" />
-              <h3 className="text-2xl md:text-4xl font-bold text-yellow-400">{item.value}</h3>
-              <p className="mt-2 text-sm md:text-lg">{item.label}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
       <section 
         className="bg-[#F8F6E4] py-10 md:py-20 px-4 md:px-10"
         style={{
